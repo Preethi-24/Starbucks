@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta charset="UTH-8">
+        <meta name="viewport" comtent="width:device-width,initial-scale=1.0"><title>Starbucks</title>
+        <style>
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding:100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+
+}
+header{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo{
+    position: relative;
+    max-width: 80px;
+
+
+}
+header ul{
+    position: relative;
+    display: flex;
+
+}
+header ul li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header ul li a{
+    display: inline-block;
+    color:black ;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content{
+    
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    font-weight:bold;
+    color: green;
+}
+.textBox{
+    max-width:600px;
+}
+.textbox h2{
+    color:black;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textbox a{
+    text-decoration: none;
+    border: 2px solid ;
+    border-radius: 20px;
+    padding: 7px 20px;
+    background-color: green;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.imgBox{
+    width:600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.thumnail{
+    position: absolute;
+    left:50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display:flex;
+    list-style: none;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.thumnail li:hover{
+    transform: translateY(15px);
+}
+.thumnail li img{
+    max-width: 60px;;
+}
+.icons{
+    list-style: none;
+}
+.circle{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:green;
+    
+    
+}
+
+        </style>
+          
+    </head>
+    <body>
+        <div class="circle">
+        <section>
+            <header>
+                <a href="#"><img src="E:\html\index.html\new\image\starbucks.jpeg.jpg" width="100" class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Whats New</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2> It's not just coffee<br>It's<span> Starbucks</span></h2>
+                    <p>The integration of IoT in home gardening has revolutionized the way plants are monitored and 
+                        maintained. The use of Raspberry Pi as a central hub for collecting sensor data, controlling 
+                        actuators, and processing information allows for an automated gardening system that can 
+                        efficiently manage watering, soil conditions, and plant health The integration of IoT in home gardening has revolutionized the way plants are monitored and 
+                        maintained.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="E:\html\index.html\new\image\f7e759d96d8051eb4c32bbeddd4359ff.jpg" width="300" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumnail">
+                <li><a href="#"><img src="E:\html\index.html\new\image\1e9413256047e7e2de56387b367434f9.jpg" width="60"></a></li>
+                <li><a href="#"><img src="E:\html\index.html\new\image\41b3f510d86b2fd348aa71ac64f4af59.jpg" width="55"></a></li>
+                <li><a href="#"><img src="E:\html\index.html\new\image\cc7258da65c2c75e673b860678d80192.jpg"width="60"></a></li>
+                <li><a href="#"><img src="E:\html\index.html\new\image\afa1ae4fa5ad45a818abede827302c81.jpg"width="50"></a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="#"><img src="E:\html\index.html\new\image\dd857e1ff93b41dae1f888743bf39ca7.jpg" width="100"></a></li>
+                <li><a href="#"><img src="E:\html\index.html\new\image\0817158f3a05c0d62de647c28f4cde54.jpg" width="100"></a></li>
+            </ul>
+        </section>
+        </div>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src=anything;
+            
+            }
+        </script>
+    </body>
+</html>
